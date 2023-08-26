@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteColor"
+    android:fadeScrollbars="false"
+    android:transitionName="transition_regi_btn"
+    tools:context="aidooo.spydo.com.project1.Common.LoginSignUp.SignUp2ndPage">
+
+    <View
+        android:id="@+id/bg_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/bg_topper"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/signUp_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="back"
+                android:src="@drawable/arrow_back_btn"
+                android:transitionName="transition_signup_bck_btn" />
+
+            <TextView
+                android:id="@+id/signUp_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/aladin"
+                android:text="Create\nAccount"
+                android:textAllCaps="true"
+                android:textColor="#090909"
+                android:textColorHint="#050505"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:transitionName="transition_title" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:padding="20dp"
+                android:src="@drawable/user"
+                android:layout_marginTop="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aladin"
+                    android:text="Choose Gender"
+                    android:textColor="#070707"
+                    android:textSize="24sp" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male_radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#070707"
+                        android:text="Male"
+                        android:textColor="#070707" />
+
+                    <RadioButton
+                        android:id="@+id/female_radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#070707"
+                        android:text="Female"
+                        android:textColor="#070707" />
+
+                    <RadioButton
+                        android:id="@+id/other_radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#070707"
+                        android:text="Other"
+                        android:textColor="#070707" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#070707" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aladin"
+                    android:text="Birthdate"
+                    android:textColor="#070707"
+                    android:textSize="24sp" />
+
+                <DatePicker
+                    android:id="@+id/age_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/forgetpassBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/age_picker."
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/signUp_nxt_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/custom_button2"
+                    android:elevation="50dp"
+                    android:onClick="nxt_signUp_scrn"
+                    android:text="Next"
+                    android:textColor="@color/WhiteColor"
+                    android:textSize="16sp"
+                    android:transitionName="transition_nxt" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

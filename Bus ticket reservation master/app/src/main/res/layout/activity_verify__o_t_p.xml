@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteColor"
+    android:fadeScrollbars="false"
+    android:transitionName="transition_regi_btn"
+    tools:context="aidooo.spydo.com.project1.Common.LoginSignUp.Verify_OTP">
+
+    <View
+        android:id="@+id/bg_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/bg_topper"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="backToRegi"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:src="@drawable/close_icon"
+                android:tint="#070707" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aladin"
+                android:text="CODE"
+                android:textAlignment="center"
+                android:textColor="#070707"
+                android:textSize="90sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aladin"
+                android:text="Verification"
+                android:textAlignment="center"
+                android:textColor="#070707"
+                android:textSize="60sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:padding="20dp"
+                android:src="@drawable/otp"
+                android:layout_marginTop="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/aladin"
+                android:text="Enter The OTP Here"
+                android:textAlignment="center"
+                android:textColor="#070707"
+                android:textSize="30sp" />
+
+            <com.chaos.view.PinView
+                android:id="@+id/pin_view"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:itemBackground="@color/whiteGreen"
+                app:hideLineWhenFilled="true"
+                app:itemCount="6"
+                app:itemHeight="50dp"
+                app:itemRadius="10dp"
+                app:itemWidth="50dp"
+                app:lineColor="#696969" />
+
+            <RelativeLayout
+                android:id="@+id/forgetpassBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pin_view"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/resend_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#00000000"
+                    android:fontFamily="sans-serif"
+                    android:onClick="resendCode"
+                    android:padding="20dp"
+                    android:text="Resend Code" />
+
+                <Button
+                    android:id="@+id/signUp_nxt_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/resend_btn"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/custom_button2"
+                    android:elevation="5dp"
+                    android:onClick="nxt_scren"
+                    android:text="Verify"
+                    android:textColor="@color/WhiteColor"
+                    android:textSize="16sp"
+                    android:transitionName="transition_nxt" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

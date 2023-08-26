@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Project1</string>
+
+    <string name="ticket_booking">Ticket booking at your door</string>
+    <string name="tension_free">Tenstion Free</string>
+
+
+    <string name="terminal_description">ticket booking at your door. We always at your service.</string>
+    <string name="easy_description">Easy and Free. just use and get out of tension.</string>
+    <string name="title_activity_main_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>
