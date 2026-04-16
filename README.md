@@ -126,14 +126,14 @@ git clone https://github.com/zishnusarker/Bus-Ticket-Reservation.git
 cd Bus-Ticket-Reservation/Bus\ ticket\ reservation\ master
 ```
 
-1. **Open in Android Studio** — File → Open → select the `Bus ticket reservation master` folder
-2. **Sync Gradle** — Android Studio will automatically sync dependencies
-3. **Configure Firebase** — The `google-services.json` is included, but for your own deployment you should:
+1. **Open in Android Studio** - File → Open → select the `Bus ticket reservation master` folder
+2. **Sync Gradle** - Android Studio will automatically sync dependencies
+3. **Configure Firebase** - The `google-services.json` is included, but for your own deployment you should:
    - Create a new Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
    - Enable Authentication (Phone provider)
    - Enable Realtime Database
    - Download and replace `app/google-services.json`
-4. **Run the app** — Connect an Android device or emulator (API 21+) and click Run
+4. **Run the app** - Connect an Android device or emulator (API 21+) and click Run
 
 ### Pre-built APK
 
@@ -276,7 +276,7 @@ Bus-Ticket-Reservation/
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
